@@ -12,7 +12,7 @@ export const register = async (req, res) => {
 
     const existingUser = await userModel.findOne({ email });
     if (existingUser) {
-      return res.status(400).json({ message: "Email already exists" });
+      return res.status(400).json({ message: "Email already exists add new" });
     }
 
     // Hash Password
