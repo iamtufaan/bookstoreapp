@@ -7,7 +7,7 @@ const Courses = () => {
 
   const fetchBookData = async () => {
     try {
-      const res = await axios.get("http://localhost:6969/api/v1/books");
+      const res = await axios.get("https://bookstoreapp-o0ql.onrender.com/api/v1/books");
       // console.log("Fetched Data:", res.data);
 
       if (Array.isArray(res.data)) {

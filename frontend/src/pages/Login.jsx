@@ -22,7 +22,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const { data } = await axios.post("http://localhost:6969/api/v1/user/login", formData);
+      const { data } = await axios.post("https://bookstoreapp-o0ql.onrender.com/api/v1/user/login", formData);
       toast.success("Login Successful!");
       localStorage.setItem("user", JSON.stringify(data.user));
       navigate("/"); 

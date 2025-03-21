@@ -20,7 +20,7 @@ const Signup = () => {
     setError(null);
 
     try {
-      const { data } = await axios.post("http://localhost:6969/api/v1/user/register", formData);
+      const { data } = await axios.post("https://bookstoreapp-o0ql.onrender.com/api/v1/user/register", formData);
       toast.success("Signup Successful!");
       localStorage.setItem("user", JSON.stringify(data.user));
       navigate("/login");

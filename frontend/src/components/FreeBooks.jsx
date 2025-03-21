@@ -13,7 +13,7 @@ const FreeBooks = () => {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get("http://localhost:6969/api/v1/books");
+      const res = await axios.get("https://bookstoreapp-o0ql.onrender.com/api/v1/books");
       if (Array.isArray(res.data)) {
         const freeBooks = res.data.filter((book) => book.isPaid === false);
         setFreeBooks(freeBooks);
